@@ -1,0 +1,48 @@
+html{
+	font-size: 22px;
+	font-family: 'Concert One', cursive; 
+}
+h1{
+	font-size: 60 px;
+	color: #061C73;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	text-shadow: 2px 2px 1px black;
+
+}
+
+h2{
+	font-size: 45 px;
+	text-align: center;
+}
+
+h3{
+	font-size: 30 px;
+	text-align: center;
+}
+
+p, li{
+	font-size: 25 px;
+	line-height: 2;
+	letter-spacing: 1px;
+	text-align: left;
+
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+}
+
+html{
+	background-color: #3A2C6C;
+}
+
+body{
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #637ABA;
+	padding: 0 20px 20px 20px;
+	border 7px solid black;
+}
