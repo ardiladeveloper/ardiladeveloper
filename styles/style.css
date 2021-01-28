@@ -1,6 +1,7 @@
 html{
-	font-size: 22px;
+	font-size: 26px;
 	font-family: 'Concert One', cursive; 
+	background-color: #380404;
 }
 h1{
 	font-size: 60 px;
@@ -35,14 +36,10 @@ img{
 	margin: 0 auto;
 }
 
-html{
-	background-color: #3A2C6C;
-}
-
 body{
 	width: 1000px;
 	margin: 0 auto;
-	background-color: #637ABA;
+	background-color: #EAEDFF;
 	padding: 0 20px 20px 20px;
 	border 7px solid black;
 }
