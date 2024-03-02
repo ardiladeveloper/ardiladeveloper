@@ -1,0 +1,107 @@
+body{
+background: #f8ffa0;
+font-family: "Madimi One", sans-serif;
+font-weight: 400;
+font-style: normal;
+background-image: url('back.jpg');
+background-size: contain;
+}
+
+h1,h2,h3{
+width: 300px;
+//height: 100px;
+background-color: rgba(198, 139, 9, 0.60);
+position: relative;
+box-shadow: 5px -4px 5px 0px #D1E522;
+margin: auto;
+margin-top:10;
+margin-bottom: 10;
+border-radius: 65px 65px 65px 65px/65px 65px 65px 65px;
+text-align: center;
+}
+
+footer, form{
+text-align: center;
+}
+
+
+tr.exp_head{
+position: relative;
+height: 100;
+bottom: -35;
+}
+
+table{
+margin: auto;
+background: #f6ff8d20;
+}
+
+legend{
+margin: auto;
+font-size: 22;
+}
+
+input,select, textarea, option{
+background: #fcffd1;
+}
+
+input[type="text"], input[type="date"], select, option{
+border-radius: 65px 65px 65px 65px/ 65px 65px 65px 65px;
+padding: 7px 25px;
+font-size: 15px;
+}
+
+textarea{
+border-radius: 10px 10px 10px 10px/10px 10px 10px 10px;
+font-size: 15px;
+padding: 10px 25px;
+}
+
+button{
+margin: auto;
+}
+
+input[type="submit"]{
+margin: auto;
+}
+
+input[type="submit"]{
+  font-size: 22;
+  height: 50;
+  top: 5;
+  font-weight: bold;
+  font-size: huge;
+}
+
+fieldset{
+background: #F0F0F080;
+}
+
+button, input[type="submit"] {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	//font-family:Arial;
+	font-size:15px;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+button:hover, input[type="submit"]:hover{
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+button:active, input[type="submit"]:active {
+	position:relative;
+	top:1px;
+}
+
+
+#pdf_form{
+padding: 15px 10px;
+}

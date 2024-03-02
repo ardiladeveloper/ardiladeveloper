@@ -1,0 +1,423 @@
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Application</title>
+		<meta charset="utf8">
+		<script src="Application_files/application.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+		<link href="Application_files/css2.css" rel="stylesheet">
+		<link rel="stylesheet" href="Application_files/application.css">
+	</head>
+
+	<body>
+		<h1 id="company"><a href="https://careers.bcg.com/job/BCG1US166EXTERNALENUS/IT-Consultant-Stockholm-BCG-Platinion">BCG Platinion</a></h1>
+		<h2 id="position">IT Consultant - Stockholm</h2>
+		<h3 id="date">2024-03-22</h3>
+		<form action="http://localhost:8080/job_applications.php" method="POST">
+		<input type="hidden" ,="" name="user" id="user" value="2">
+		<input type="hidden" ,="" name="application_id" id="application_id" value="1">
+		<fieldset>
+		<legend><h3>Notes</h3></legend>
+		<textarea name="notes" id="notes" rows="10" cols="80">IT Consultant to
+ collaborate with Boston consulting group. Agile methods and IT 
+implementation - machine learning to analyse individual customer needs -
+ propose IT architectures for enterprises.
+
+Machine learning, cyber resilience, DevOps, Agile, AI, Robotics.
+
+International and multidisciplinary teams, ok with travelling, good 
+English level.</textarea>
+		</fieldset>
+		<fieldset name="front_cover">
+		<legend><h3>Front Cover</h3></legend>
+		<p><b id="salutation">M. Sc. </b><b id="lastname">Ardila Bernal, </b><b id="firstname">Pablo Andres</b></p>
+		<fieldset>
+		<legend>Soft Skills</legend>
+		<textarea name="soft_skill_1" id="soft_skill_1" rows="5" cols="80">Research-
+oriented and skilful engineer – a passionate technologist who, after 
+working in diverse cultures, has steadily reinforced his creative 
+potential. He is frequently pointed out as a visionary, someone who 
+executes his endeavours through a thoroughly-structured mindset</textarea>
+		<br>
+		<textarea name="soft_skill_2" id="soft_skill_2" rows="5" cols="80">Looking
+ forward to proactively contribute with his knowledge on software 
+development to optimally handle the top-notch battery technology in 
+Bavertis</textarea>
+		<br>
+		<textarea name="soft_skill_3" id="soft_skill_3" rows="5" cols="80">Innovative engineer and humanist that shapes the world of tomorrow!</textarea>
+		</fieldset>
+
+		<fieldset>
+		<legend>Technical Skills</legend>
+		<textarea name="tech_skill_1" id="tech_skill_1" rows="5" cols="80">Highly-
+skilled software designer capable of achieving and delivering the most 
+dependable design software for next-generation of databases</textarea>
+		<br>
+		<textarea name="tech_skill_2" id="tech_skill_2" rows="5" cols="80">Solid
+ knowledge in languages like C and diverse software development 
+strategies and tools that reliably support his mindset to deliver secure
+ and high-quality services</textarea>
+		<br>
+		<textarea name="tech_skill_3" id="tech_skill_3" rows="5" cols="80"> A motivating leader that follows SAFe methodologies – Innovation and Entrepreneurship</textarea>
+		</fieldset>
+		
+		</fieldset>
+		
+		<input type="checkbox" name="include_cl" value="include_cl" checked="checked" id="include_cl" onclick="inc_ltr()"> <label><b>Include cover letter</b></label>
+		<fieldset id="cl_fs">
+		<legend><h3>Cover Letter</h3></legend>
+		<fieldset>
+		<legend>Addressee:</legend>
+		<input type="text" name="add_name" value="Mrs. Evelyng Tavera" id="add_name" title="This is the name of the adressee" size="30"> <br>
+		<input type="text" name="add_department" value="Lawyer" id="add_department" size="30"> <br>
+		<input type="text" name="add_company" value="Tavera Lawyers" id="add_company" size="30"> <br>
+		<input type="text" name="add_address" value="North Bogotá almost Zipaquira" id="add_address" size="30">
+		</fieldset>
+		<label>Subject: <input type="text" name="subject" id="subject" value="Application as IT Consultant - Stockholm" size="60"></label>
+		<br>
+		<label>Letter content:<br><textarea name="letter" rows="18" cols="80" id="letter">Dear
+ Mrs. Tavera, I am applying to the job position as coffee councelor. I 
+am the indicate for this position because you have already stated that I
+ am in your top of the top for drinking coffees.Regards, Ardila. </textarea></label>
+		</fieldset>
+
+		<fieldset name="resume">
+		<legend><h3>Resumé</h3></legend>
+		
+		<fieldset>
+		<legend>Work Experience</legend>
+		<table id="experience" ,="" bgcolor="teal">
+		<thead>
+		<tr><th>From</th><th>To</th><th>Position</th><th>Company</th><th>Country</th></tr>
+		</thead>
+		<tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_0" value="2022-06-21"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_0" value="2023-05-05"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_0" size="35" value="Technical Lead, Software Engineer, Push to Customs"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_0" value="Amadeus IT Group"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_0" size="6/" value="Colombia"></td>
+		<th> <span class="remove"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[0][]" rows="4" cols="80" id="exp_ach_0_0">Configuration of XML files through a CI/CD framework based on BitBucket and Jenkins</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[0][]" rows="4" cols="80" id="exp_ach_0_1">Functional analysis and deep comprehension of C++ legacy code</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr><tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[0][]" rows="4" cols="80" id="exp_ach_0_2">Proactively
+ participated of ceremonies contained in the SAFe development framework,
+ while thoroughly defining technical specifications from customer needs 
+that had to be solved during regular product increments</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr><tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[0][]" rows="4" cols="80" id="exp_ach_0_3">Evaluated and improved Python scripts for the execution of compilation and integrations tasks of source code</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr></tbody>
+		<tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_1" value="2021-08-02"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_1" value="2022-05-13"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_1" size="35" value="IT Support"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_1" value="Institute for Ecosystem Dynamics and Forestry Management, Technical University of Munich"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_1" size="6/" value="Germany"></td>
+		<th> <span class="remove" id="1"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[1][]" rows="4" cols="80" id="exp_ach_1_0">Timely delivered proof of concept of an automated warehouse using Qt and C++ along with MySQL</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[1][]" rows="4" cols="80" id="exp_ach_1_1">Efficiently managed IT Linux infrastructure and NAS storage through UNIX console interface and corresponding commands</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr><tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[1][]" rows="4" cols="80" id="exp_ach_1_2">Laboriously developed custom web calendar app in Node.js, for management of the working hours of the staff using Toast UI</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr></tbody><tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_2" value="2021-11-01"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_2" value="2021-05-31"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_2" size="35" value="AR Developer, virtual art exhibition in augmented reality"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_2" value="app Art &amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp; Science Node available for iOS and Android"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_2" size="6/" value="Germany"></td>
+		<th> <span class="remove" id="2"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[2][]" rows="4" cols="80" id="exp_ach_2_0">Carefully
+ integrated .obj formatted 3D models while strategically coded 
+functionalities in C++ and graphic user interfaces using Unreal Engine 4
+ and the object oriented programming paradigm. Available in iOS and 
+Android</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		</tbody><tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_3" value="2020-08-17"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_3" value="2020-09-30"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_3" size="35" value="Project engineer at Berlin Startup Scholarship"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_3" value="Humboldt University and Technical University of Berlin"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_3" size="6/" value="Germany"></td>
+		<th> <span class="remove" id="3"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[3][]" rows="4" cols="80" id="exp_ach_3_0">Implementation
+ of the protocol CANOpen in Ubuntu Linux, utilized for the driving of 
+servomotors through C++ and ROS – Robot Operating System</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		</tbody><tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_4" value="2020-01-06"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_4" value="2020-07-31"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_4" size="35" value="Responsible for technical infrastructure"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_4" value="Robotics and Biology Lab (Oliver Brock) at Technical University of Berlin"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_4" size="6/" value="Germany"></td>
+		<th> <span class="remove" id="4"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[4][]" rows="4" cols="80" id="exp_ach_4_0">Management
+ of the IT infrastructure of the laboratory: clusters and high 
+performance computers running on Ubuntu Linux; industrial PUMA running 
+on QNX and Franka Emika robots</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[4][]" rows="4" cols="80" id="exp_ach_4_1">Orderly processed invoices and payment orders while upgrading the inventory of the lab</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr></tbody><tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_5" value="2017-11-15"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_5" value="2018-11-30"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_5" size="35" value="Mechatronic engineer consultant"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_5" value="Norandum AB"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_5" size="6/" value="Sweden"></td>
+		<th> <span class="remove" id="5"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[5][]" rows="4" cols="80" id="exp_ach_5_0">M. Sc. Thesis on ”Augmented Reality Stationary Platform Controlled by Image Processing Interface”</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[5][]" rows="4" cols="80" id="exp_ach_5_1">Shape
+ recognition engine using neural networks and image filters written in 
+C++ and the OpenCV library in RaspberryPi running on Ubuntu Linux server
+ edition</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr><tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[5][]" rows="4" cols="80" id="exp_ach_5_2">Sound frequency identification in C and the library FFTW3 running in RaspberryPi and Ubuntu Linux environment</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr></tbody><tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_6" value="2017-02-15"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_6" value="2017-07-14"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_6" size="35" value="Working student"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_6" value="Fraunhofer Institute for Production Systems and Design Technology"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_6" size="6/" value="Germany"></td>
+		<th> <span class="remove" id="6"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[6][]" rows="4" cols="80" id="exp_ach_6_0">Manually assembled optical sensors and mechanical parts according to well-documented manufacturing processes</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[6][]" rows="4" cols="80" id="exp_ach_6_1">Timely
+ developed and presented augmented reality 3D robot in the HoloLens 
+headset (Augmented Reality helmet) in C sharp deployed from the Unity 
+Game Engine</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr></tbody><tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_7" value="2014-10-01"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_7" value="2015-10-30"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_7" size="35" value="Working research student"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_7" value="institute for Measurement and Control, University of Kassel"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_7" size="6/" value="Germany"></td>
+		<th> <span class="remove" id="7"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[7][]" rows="4" cols="80" id="exp_ach_7_0">Bachelor
+ thesis on &amp;amp;amp;amp;amp;amp;amp;amp;amp;quot;Evaluation of 
+Methods for Detection and Localization of Compressed Air Leaks Using 
+Ultrasound Emissions&amp;amp;amp;amp;amp;amp;amp;amp;amp;quot;</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[7][]" rows="4" cols="80" id="exp_ach_7_1">Data acquisition from an RS232 interface running on C++ on an Ubuntu Linux environment</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr></tbody><tbody>
+		<tr class="exp_head">
+		<td><input type="date" name="exp_from[]" id="exp_from_8" value="2015-05-01"></td>
+		<td><input type="date" name="exp_to[]" id="exp_to_8" value="2015-07-31"></td>
+		<td><input type="text" name="exp_pos[]" id="exp_pos_8" size="35" value="Working research student"></td>
+		<td><input type="text" name="exp_com[]" id="exp_com_8" value="institute for Energy Management and Power System Operation, University of Kassel"></td>
+		<td><input type="text" name="exp_ctr[]" id="exp_ctr_8" size="6/" value="Germany"></td>
+		<th> <span class="remove" id="8"><button type="button">Remove experience</button></span></th>
+		</tr>
+		<tr><th colspan="6"><button type="button" id="ach_button">Add Achievement</button></th></tr>
+		<tr>
+		<th>Achievement</th>
+		<th colspan="4"><textarea name="exp_ach[8][]" rows="4" cols="80" id="exp_ach_8_0">Collaborated
+ with research activities about smart grids and tested the corresponding
+ java implementation based on swarm algorithm using multithreading in 
+Windows</textarea></th>
+		<th> <span class="remove"><button type="button">Remove</button></span></th>
+		</tr>
+		<tr><th colspan="6">--- * --- * --- *  --- * --- * ---</th><th></th></tr>
+		</tbody></table>
+		<button type="button" onclick="add_exp()">Add Experience</button>
+		</fieldset>
+
+		<fieldset>
+		<legend>Education</legend>
+		<table id="education">
+		<thead><tr><th>From</th><th>To</th><th>Title</th><th>University</th><th>Country</th></tr></thead>
+		<tbody><tr>
+		<td><input type="date" name="edu_from[]" id="edu_from_1" value="2024-02-01"></td>
+		<td><input type="date" name="edu_to[]" id="edu_to_1" value="2024-02-28"></td>
+		<td><input type="text" name="edu_tit[]" id="edu_tit_1" value="M. Sc. Embedded Systems - ICT Innovation"></td>
+		<td><input type="text" name="edu_uni[]" id="edu_uni_1" value="KTH Royal Institute of Technology"></td>
+		<td><input type="text" name="edu_ctr[]" id="edu_ctr_1" value="Sweden"></td>
+		<td><button type="button">Remove</button></td>
+		</tr></tbody>
+		<tbody><tr>
+		<td><input type="date" name="edu_from[]" id="edu_from_1" value="2024-02-01"></td>
+		<td><input type="date" name="edu_to[]" id="edu_to_1" value="2024-02-28"></td>
+		<td><input type="text" name="edu_tit[]" id="edu_tit_1" value="M. Sc. Embedded Systems - ICT Innovation"></td>
+		<td><input type="text" name="edu_uni[]" id="edu_uni_1" value="Technical University of Berlin"></td>
+		<td><input type="text" name="edu_ctr[]" id="edu_ctr_1" value="Germany"></td>
+		<td><button type="button">Remove</button></td>
+		</tr></tbody><tbody><tr>
+		<td><input type="date" name="edu_from[]" id="edu_from_1" value="2024-02-01"></td>
+		<td><input type="date" name="edu_to[]" id="edu_to_1" value="2024-02-28"></td>
+		<td><input type="text" name="edu_tit[]" id="edu_tit_1" value="Mechatronic Engineering"></td>
+		<td><input type="text" name="edu_uni[]" id="edu_uni_1" value="National University of Colombia"></td>
+		<td><input type="text" name="edu_ctr[]" id="edu_ctr_1" value="Colombia"></td>
+		<td><button type="button">Remove</button></td>
+		</tr></tbody></table>
+		<button type="button" onclick="add_edu()">Add education</button>
+		</fieldset>
+
+		<fieldset>
+		<legend>Awards</legend>
+		<table id="awards">
+		<thead><tr><th>From</th><th>To</th><th>Award</th></tr></thead>
+		<tbody><tr>
+		<td><input type="date" name="awa_from[]" id="awa_from_1" value="2016-10-03"></td>
+		<td><input type="date" name="awa_to[]" id="awa_to_1" value="2018-08-31"></td>
+		<td><input type="text" name="awa_awa[]" id="awa_awa_1" value="EIT Digital Scholarship"></td>
+		<td><button type="button">Remove</button></td>
+		</tr></tbody>
+		</table>
+		<button type="button" onclick="add_awa()">Add award</button>
+		</fieldset>
+
+		<fieldset id="skills">
+		<legend>Skills</legend>
+
+		<table>
+		<tbody><tr><th>Skill</th><th colspan="2">Description</th></tr>
+		<tr><td>Language</td><td><select name="languages[]" id="lang_1"><option value="en">English</option><option value="es" selected="selected">Spanish</option><option value="de">German</option></select></td> <td><select name="languages_level[]" id="lang_level_1"><option value="a1">A1 - Beginner</option><option value="a2">A2 - Elementary</option><option value="b1">B1 - Intermediate</option><option value="b2">B2 - Upper-Intermediate</option><option value="c1">C1 - Advanced</option><option value="c2">C2 - Proficiency</option><option value="m" selected="selected">Native</option></select></td> </tr>
+
+		<tr><td>Language</td><td><select name="languages[]" id="lang_2"><option value="en" selected="selected">English</option><option value="es">Spanish</option><option value="de">German</option></select></td> <td><select name="languages_level[]" id="lang_level_2"><option value="a1">A1 - Beginner</option><option value="a2">A2 - Elementary</option><option value="b1">B1 - Intermediate</option><option value="b2">B2 - Upper-Intermediate</option><option value="c1" selected="selected">C1 - Advanced</option><option value="c2">C2 - Proficiency</option><option value="m">Native</option></select> </td></tr>
+
+		<tr><td>Language</td><td><select name="languages[]" id="lang_3"><option value="en">English</option><option value="es">Spanish</option><option value="de" selected="selected">German</option></select></td> <td><select name="languages_level[]" id="lang_level_3"><option value="a1">A1 - Beginner</option><option value="a2">A2 - Elementary</option><option value="b1">B1 - Intermediate</option><option value="b2" selected="selected">B2 - Upper-Intermediate</option><option value="c1">C1 - Advanced</option><option value="c2">C2 - Proficiency</option><option value="m">Native</option></select> </td></tr>
+		
+		<tr><td>Programming</td><td colspan="2"><input type="text" name="programming" id="programming" value="C++, C, Java, CMake, Make, HTML, Javascript, MySQL, PHP, git, object oriented programming, C#, VHDL, LLVM"></td></tr>
+		<tr><td>Office</td><td colspan="2"><input type="text" name="office" id="office" value="MS Excel, LibreOffice (Writer and Calc), LaTex"></td></tr>
+		<tr><td>Others</td><td colspan="2"><input type="text" name="others" id="others" value="MacOS, UbuntuOS, Windows11, Unreal Engine"></td></tr>
+
+		</tbody></table>
+
+		</fieldset>
+		
+		<fieldset>
+		<legend>Additional Courses</legend>
+		<table id="courses">
+		<thead><tr><th>From</th><th>To</th><th>Course</th><th>Institution</th><th>Country</th></tr></thead>
+		<tbody><tr>
+		<td><input type="date" name="crs_from[]" id="crs_from_1" value="2017-07-03"></td>
+		<td><input type="date" name="crs_to[]" id="crs_to_1" value="2017-07-14"></td>
+		<td><input type="text" name="crs_tit[]" id="crs_tit_1" value="EIT Digital Summerschool, Decentralized Production"></td>
+		<td><input type="text" name="crs_ins[]" id="crs_ins_1" value="Technical University of Munich"></td>
+		<td><input type="text" name="crs_ctr[]" id="crs_ctr_1" value="Germany"></td>
+		<td><button type="button">Remove</button></td>
+		</tr></tbody>
+		<tbody><tr>
+		<td><input type="date" name="crs_from[]" id="crs_from_1" value="2016-10-03"></td>
+		<td><input type="date" name="crs_to[]" id="crs_to_1" value="2018-08-31"></td>
+		<td><input type="text" name="crs_tit[]" id="crs_tit_1" value="Innovation and Entrepreneurship, EIT Digital minor"></td>
+		<td><input type="text" name="crs_ins[]" id="crs_ins_1" value="Technical Univer- sity of Berlin and KTH Royal Institute of Technology"></td>
+		<td><input type="text" name="crs_ctr[]" id="crs_ctr_1" value="Germany and Sweden"></td>
+		<td><button type="button">Remove</button></td>
+		</tr></tbody></table>
+		<button type="button" onclick="add_crs()">Add course</button>
+
+		</fieldset>
+
+		<fieldset>
+		<legend>Year Abroad</legend>
+		<table id="abroad">
+		<thead><tr><th>From</th><th>To</th><th>Place</th></tr></thead>
+		<tbody><tr>
+		<td><input type="date" name="abr_from[]" id="abr_from_1" value="2019-01-01"></td>
+		<td><input type="date" name="abr_to[]" id="abr_to_1" value="2019-12-31"></td>
+		<td><input type="text" name="abr_plc[]" id="abr_plc_1" value="Poland and Colombia"></td>
+		<td><button type="button">Remove</button></td>
+		</tr></tbody>
+		</table>
+		<button type="button" onclick="add_place()">Add place</button>
+		</fieldset>
+
+		<input type="submit" value="Submit!">
+		
+		
+		<form id="pdf_form" action="http://localhost:8080/pdf.php" method="GET"> 
+		<input type="hidden" ,="" name="user" id="pdf_user" value="2">
+                <input type="hidden" ,="" name="application_id" id="pdf_application_id" value="1">
+		<input type="submit" value="Produce your PDF">
+		</form>		
+
+	<footer>
+	<a href="file:///Users/ardila/Projects/professional_profile_fe/privacy_policy.html">Privacy Policy</a>
+	<a href="file:///Users/ardila/Projects/professional_profile_fe/terms_of_use.html">Terms of Use</a>
+	<p>©ArdilaDeveloper</p>
+	</footer>
+	
+
+</fieldset></form></body></html>
